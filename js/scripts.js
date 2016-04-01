@@ -19,5 +19,7 @@ $(document).ready(function() {
 
     var userInput = parseInt($("input#input").val());
     var result = pingPong(userInput);
+
+    $("#result").show();
   });
 });
