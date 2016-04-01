@@ -15,6 +15,7 @@ body {
   text-align: center;
   background-color: #654D91;
   color: #F78185;
+  text-shadow: 10px 10px 10px grey;
 }
 
 #ping-pong {
@@ -50,7 +51,7 @@ body {
 }
 
 .btn:hover {
-  color: white;
+  color: #DB5A6F;
   background-color: purple;
 }
 

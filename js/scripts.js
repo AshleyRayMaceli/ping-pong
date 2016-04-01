@@ -2,13 +2,13 @@
 var pingPong = function(userInput) {
   for (index = 1; index <= userInput; index += 1) {
     if ((index % 15) === 0) {
-      $(".result").append("<li> Peanut Butter and Jelly! </li>");
+      $(".result").append("<p> Peanut Butter & Jelly! </p>");
     } else if ((index % 3) === 0) {
-      $(".result").append("<li> Peanut Butter </li>");
+      $(".result").append("<p> Peanut Butter </p>");
     } else if ((index % 5) === 0) {
-      $(".result").append("<li> Jelly </li>");
+      $(".result").append("<p> Jelly </p>");
     } else {
-      $(".result").append("<li>"+ index + "</li>");
+      $(".result").append("<p>"+ index + "</p>");
     }
   }
 }
