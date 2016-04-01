@@ -6,41 +6,36 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Ping Pong!</title>
+    <title>Peanut Butter &amp; Jelly!</title>
   </head>
   <body>
-
     <div class="jumbotron">
       <h1>Peanut Butter &amp; Jelly!</h1>
     </div>
-
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-7">
-        <form id="ping-pong">
-          <h2>Welcome to a game of Ping Pong!</h2>
-          <h2>(Revamped as Peanut Butter &amp; Jelly)</h2>
-          <h3>Here are the Rules:</h3>
-          <h4>This game of Ping Pong will take your number, count up to that number from 1 with some fun exceptions:</h4>
-          <ul>
-            <ol>1. Numbers divisible by 3 will be replaced with Peanut Butter!</ol>
-            <ol>2. Numbers divisible by 5 will be replaced with Jelly!</ol>
-            <ol>3. Numbers divisible by both 3 and 5 will be replaced with <em>Peanut Butter &amp; Jelly!</em> Yum!</ol>
-          </ul>
-
-          <div id="form-group">
-            <label for="input">Enter a number:</label>
-            <input id="input" type="text">
+          <form id="ping-pong">
+            <h2>Welcome to a game of Ping Pong!</h2>
+            <h2>(Revamped as Peanut Butter &amp; Jelly)</h2>
+            <h3>Here are the Rules:</h3>
+            <h4>This game of Ping Pong will take your number, count up to that number from 1 with some fun exceptions:</h4>
+            <ul>
+              <ol>1. Numbers divisible by 3 will be replaced with Peanut Butter!</ol>
+              <ol>2. Numbers divisible by 5 will be replaced with Jelly!</ol>
+              <ol>3. Numbers divisible by both 3 and 5 will be replaced with <em>Peanut Butter &amp; Jelly!</em> Yum!</ol>
+            </ul>
+            <div id="form-group">
+              <label for="input">Enter a number:</label>
+              <input id="input" type="text">
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+          <div id="result-image">
+            <img src="img/pbj2.jpg">
+            <p><a class="btn" href="index.html" role="button">Play Again!</a></p>
           </div>
-          <button type="submit" class="btn">Submit</button>
-        </form>
-
-        <div id="result-image">
-          <img src="img/pbj2.jpg">
-          <p><a class="btn" href="index.html" role="button">Play Again!</a></p>
-        </div>
-      </div> <!-- Closes first column -->
-
+        </div> <!-- Closes first column -->
 <!-- Ouput begins here -->
         <div id="result">
           <div class="col-md-5">
@@ -48,13 +43,11 @@
           </div>
         </div>
 <!-- Ouput ends here -->
-
         <div id="front-image">
           <img src="img/pbj.jpg">
         </div>
       </div> <!-- Closes the row -->
     </div> <!-- Closes the container -->
-
     <div class="author">
       <p>Created by Ashley Maceli with the help of <em>Epicodus</em></p>
     </div>
