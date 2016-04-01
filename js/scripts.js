@@ -21,5 +21,6 @@ $(document).ready(function() {
     var result = pingPong(userInput);
 
     $("#result").show();
+    $("#front-image").hide();
   });
 });

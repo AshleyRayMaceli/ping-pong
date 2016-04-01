@@ -12,18 +12,39 @@
     <div class="jumbotron">
       <h1>Ping Pong!</h1>
     </div>
-
-    <div class="container">
-      <form id="ping-pong">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+        <form id="ping-pong">
+        <h2>Welcome to Ping Pong!</h2>
+        <h3>Here are the Rules</h3>
+        <h4>This game of Ping Pong will take your number, count up to that number from 1 with some fun exceptions:</h4>
+        <ul>
+          <ol>1. Numbers divisible by 3 will be replaced with Ping!</ol>
+          <ol>2. Numbers divisible by 5 will be replaced with Pong!</ol>
+          <ol>3. Numbers divisible by both 3 and 5 will be replaced with Ping Pong!</ol>
+        </ul>
         <div id="form-group">
           <label for="input">Enter a number:</label>
           <input id="input" type="text">
         </div>
         <button type="submit" class="btn">Submit</button>
       </form>
+    </div>
+
+<!-- Ouput begins here -->
       <div id="result">
-        <h3><span class="result"></span></h3>
-        <a class="btn btn-danger" href="index.html" role="button">Play Again!</a>
+          <div class="col-md-6">
+            <h3><span class="result"></span></h3>
+            <a class="btn" href="index.html" role="button">Play Again!</a>
+          </div>
+        </div>
+
+        <div id="front-image">
+          <h1>test image</h1>
+        </div>
+
+      </div>
     </div>
   </body>
 </html>
