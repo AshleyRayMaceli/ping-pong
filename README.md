@@ -15,6 +15,7 @@ _Epicodus Intro to Programming Week 3 independent project. Created a Ping Pong g
 ## Known Bugs
 
 _If user picks a large number, the user must scroll all the way back to the top to press the Play Again button_
+_One if/else statement in user interface logic to alert user if what they are entering is NaN or a negative number._
 
 ## Support and contact details
 
