@@ -1,6 +1,9 @@
+body {
+  color: #874494;
+}
+
 #result {
   display: none;
-  text-align: center;
 }
 
 #result-image {
@@ -10,20 +13,34 @@
 
 .jumbotron {
   text-align: center;
+  background-color: #654D91;
+  color: #F78185;
 }
 
 #ping-pong {
   text-align: center;
 }
 
-#front-image {
+#result-image img {
+  height: 50%;
+  width: 50%;
+  border-color: black;
+  border-width: thick;
+  border-style: solid;
+  margin-bottom: 20px;
+}
+
+#front-image img {
   text-align: center;
+  height: 50%;
+  width: 50%;
 }
 
 .btn {
   margin-top: 20px;
-  background-color: red;
-  color: blue;
+  margin-bottom: 30px;
+  background-color: #B19CD9;
+  color: black;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 30px;
@@ -39,4 +56,12 @@
 
 ol {
   font-weight: bold;
+}
+
+.author {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background-color: #F78185;
 }

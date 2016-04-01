@@ -2,11 +2,11 @@
 var pingPong = function(userInput) {
   for (index = 1; index <= userInput; index += 1) {
     if ((index % 15) === 0) {
-      $(".result").append("<li> Ping Pong! </li>");
+      $(".result").append("<li> Peanut Butter and Jelly! </li>");
     } else if ((index % 3) === 0) {
-      $(".result").append("<li> Ping </li>");
+      $(".result").append("<li> Peanut Butter </li>");
     } else if ((index % 5) === 0) {
-      $(".result").append("<li> Pong </li>");
+      $(".result").append("<li> Jelly </li>");
     } else {
       $(".result").append("<li>"+ index + "</li>");
     }
