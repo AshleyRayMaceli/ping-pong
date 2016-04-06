@@ -1,15 +1,29 @@
 //business logic
+var pingPongArray = [];
+
+var numberCheck = function(userInput) {
+  if (isNaN(userInput) || (userInput <= 0)) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
 var pingPong = function(userInput) {
-  for (index = 1; index <= userInput; index += 1) {
+  if (numberCheck(userInput) === true) {
+    for (index = 1; index <= userInput; index += 1) {
       if ((index % 15) === 0) {
-        $(".result").append("<p> Peanut Butter & Jelly! </p>");
+        pingPongArray.push("Peanut Butter & Jelly!");
     } else if ((index % 3) === 0) {
-        $(".result").append("<p> Peanut Butter </p>");
+        pingPongArray.push("Peanut Butter");
     } else if ((index % 5) === 0) {
-        $(".result").append("<p> Jelly </p>");
+        pingPongArray.push("Jelly");
     } else {
-        $(".result").append("<p>"+ index + "</p>");
+        pingPongArray.push(index);
+      }
     }
+  } else {
+    alert("Please enter a positive number!");
   }
 }
 //user interface logic
@@ -18,11 +32,14 @@ $(document).ready(function() {
     event.preventDefault();
 
     var userInput = parseInt($("input#input").val());
+    var result = pingPong(userInput);
 
-    if (isNaN(userInput) || (userInput <= 0)) {
-      alert("Please enter a positive number!");
+    pingPongArray = pingPongArray.join(", ");
+
+    if (numberCheck(userInput) === false) {
+      location.reload(true);
     } else {
-      var result = pingPong(userInput);
+      $(".result").append(pingPongArray);
       $("#result").show();
       $("#result-image").show();
       $("#ping-pong").hide();
